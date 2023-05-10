@@ -11,116 +11,130 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сторінки -->
     <header class="page-header">
-      <nav class="navigation">
-        <a href="./index.html" class="logo link">Web<span class="logo-studio">Studio</span></a>
-        <ul class="menu list">
-          <li class="menu-item">
-            <a href="./index.html" class="menu-link link">Studio</a>
-          </li>
-          <li class="menu-item">
-            <a href="./portfolio.html" class="menu-link link">Portfolio</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-link link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="adress-header">
-        <ul class="list">
-          <li><a href="mailto:info@devstudio.com" class="cont-link link">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111" class="cont-link link">+11 (000) 111-11-11</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <nav class="header-navigation">
+          <a href="./index.html" class="logo link">Web<span class="logo-studio">Studio</span></a>
+          <ul class="menu list">
+            <li class="menu-item">
+              <a href="./index.html" class="menu-link link">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a href="./portfolio.html" class="menu-link link">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="adress-header">
+          <ul class="list">
+            <li><a href="mailto:info@devstudio.com" class="cont-link link">info@devstudio.com</a></li>
+            <li><a href="tel:+110001111111" class="cont-link link">+11 (000) 111-11-11</a></li>
+          </ul>
+        </address>
+      </div>
     </header>
+    <!-- Головне -->
     <main>
       <section>
-        <h1 hidden>Hidden title</h1>
-        <ul class="list">
-          <li><button type="button" class="filter-btn">All</button></li>
-          <li><button type="button" class="filter-btn">Web Site</button></li>
-          <li><button type="button" class="filter-btn">App</button></li>
-          <li><button type="button" class="filter-btn">Design</button></li>
-          <li><button type="button" class="filter-btn">Marketing</button></li>
-        </ul>
+        <div class="container">
+          <h1 hidden>Hidden title</h1>
+          <ul class="list port-btn-list">
+            <li><button type="button" class="filter-btn">All</button></li>
+            <li><button type="button" class="filter-btn">Web Site</button></li>
+            <li><button type="button" class="filter-btn">App</button></li>
+            <li><button type="button" class="filter-btn">Design</button></li>
+            <li><button type="button" class="filter-btn">Marketing</button></li>
+          </ul>
 
-        <ul class="list">
-          <li>
-            <a class="link" href=""
-              ><img src="./images/bank-app-img.jpg" alt="bank app" />
-              <h2 class="little-title">Banking App Interface Concept</h2>
-              <p class="descr-p">App</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img src="./images/cashless-payment-img.jpg" alt="cashless payment" />
-              <h2 class="little-title">Cashless Payment</h2>
-              <p class="descr-p">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img src="./images/meditation-app-img.jpg" alt="meditation app" />
-              <h2 class="little-title">Meditation App</h2>
-              <p class="descr-p">App</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img src="./images/taxi-service-img.jpg" alt="taxi service" />
-              <h2 class="little-title">Taxi Service</h2>
-              <p class="descr-p">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img src="./images/screen-illustrations-img.jpg" alt="screen illustrations" />
-              <h2 class="little-title">Screen Illustrations</h2>
-              <p class="descr-p">Design</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img src="./images/online-courses-img.jpg" alt="online courses" />
-              <h2 class="little-title">Online Courses</h2>
-              <p class="descr-p">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img src="./images/inst-stories-concept-img.jpg" alt="instagram stories" />
-              <h2 class="little-title">Instagram Stories Concept</h2>
-              <p class="descr-p">Design</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img src="./images/food-img.jpg" alt="organic food" />
-              <h2 class="little-title">Organic Food</h2>
-              <p class="descr-p">Web Site</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img src="./images/coffee-img.jpg" alt="fresh coffee" />
-              <h2 class="little-title">Fresh Coffee</h2>
-              <p class="descr-p">Web Site</p>
-            </a>
-          </li>
-        </ul>
+          <ul class="list port-photos-list">
+            <li>
+              <a class="link" href=""
+                ><img src="./images/bank-app-img.jpg" alt="bank app" />
+                <h2 class="little-title">Banking App Interface Concept</h2>
+                <p class="descr-p">App</p>
+              </a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./images/cashless-payment-img.jpg" alt="cashless payment" />
+                <h2 class="little-title">Cashless Payment</h2>
+                <p class="descr-p">Marketing</p>
+              </a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./images/meditation-app-img.jpg" alt="meditation app" />
+                <h2 class="little-title">Meditation App</h2>
+                <p class="descr-p">App</p>
+              </a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./images/taxi-service-img.jpg" alt="taxi service" />
+                <h2 class="little-title">Taxi Service</h2>
+                <p class="descr-p">Marketing</p>
+              </a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./images/screen-illustrations-img.jpg" alt="screen illustrations" />
+                <h2 class="little-title">Screen Illustrations</h2>
+                <p class="descr-p">Design</p>
+              </a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./images/online-courses-img.jpg" alt="online courses" />
+                <h2 class="little-title">Online Courses</h2>
+                <p class="descr-p">Marketing</p>
+              </a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./images/inst-stories-concept-img.jpg" alt="instagram stories" />
+                <h2 class="little-title">Instagram Stories Concept</h2>
+                <p class="descr-p">Design</p>
+              </a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./images/food-img.jpg" alt="organic food" />
+                <h2 class="little-title">Organic Food</h2>
+                <p class="descr-p">Web Site</p>
+              </a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./images/coffee-img.jpg" alt="fresh coffee" />
+                <h2 class="little-title">Fresh Coffee</h2>
+                <p class="descr-p">Web Site</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Футер сайту -->
     <footer class="footer">
-      <a href="./index.html" class="logo link">Web<span class="logo-studio-footer">Studio</span></a>
-      <p class="p-footer">
-        Increase the flow of customers and sales for your business with digital marketing & growth solutions.
-      </p>
+      <div class="footer-div container">
+        <a href="./index.html" class="logo link footer-link">Web<span class="logo-studio-footer">Studio</span></a>
+        <p class="p-footer">
+          Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

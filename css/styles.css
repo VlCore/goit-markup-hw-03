@@ -3,13 +3,53 @@
     --secondary-font: 'Raleway', sans-serif;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color:#434455;
-    background-color: #ffffff;
 
+body {
+    font-family: var(--primary-font);
+    color: #434455;
+    background-color: #ffffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px red solid; */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .list {
     list-style: none;
@@ -17,31 +57,108 @@ body {
 
 .link {
     text-decoration: none;
+    
 }
-/* ===== LOGO ===== */
+
+.little-title {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.sec-title {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+.descr-p {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.section {
+    padding-top: 120px;
+    border-bottom: 120px;
+}
+
+
+
+
+/* =================== HEADER ==================== */
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: #E7E9FC 1px solid;
+}
+
+.header-navigation {
+
+}
+
 .logo {
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.17;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        color: #4D5AE5;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: #4D5AE5;
 }
 
 .logo-studio {
     color: #2E2F42;
 }
-/* ===== HEADER CONTACTS ===== */
+
+.menu {
+
+}
+
+.menu-item {
+
+}
+
+.menu-link {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: #404BBF;
+}
+
 .adress-header {
     font-style: normal;
 }
-.cont-link {
+
+.cont-link{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -55,28 +172,15 @@ body {
     color: #404bbf;
 }
 
-.menu-link {
-    font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-    color: #404BBF;
-}
-/* ===== 1 SECTION HERO ===== */
+/* ================== HERO ===================== */
 
 .hero {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .main-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
@@ -84,14 +188,16 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    padding: 0 316px 48px 316px;
+    
 }
 
 .modal-btn {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
@@ -100,6 +206,8 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    margin: 0 auto;
+    padding: 16px 32px;
 }
 
 .modal-btn:hover,
@@ -107,68 +215,72 @@ body {
     background: #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
 }
 
-.descr-p {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-.sec-title {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
-}
-
-.little-title {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
+/* =================== +++ of this comp ============= */
 
 .hidden-title {
-    
+
 }
 
-/* ===== 4 SECTION TEAM */
+/* =============== What we can do ============ */
+
+.facil-sec-title {
+    padding-bottom: 72px;
+}
+
+.facil-list {
+    margin-bottom: 120px;
+}
+
+/* ==================== Team ================= */
 
 .team-sec {
     background-color: #f4f4fd;
+}
+
+.team-sec-title {
+    padding-bottom: 72px;
+}
+
+.team-list {
+    padding-bottom: 120px;
 }
 
 .team-photos {
     background-color: #ffffff;
 }
 
-/* ===== FOOTER ===== */
+/* ================= FOOTER ================ */
+
 .footer {
     background-color: #2e2f42;
 }
 
 .logo-studio-footer {
-    color:#f4f4fd;
+    color: #f4f4fd;
 }
 
 .p-footer {
     color: #f4f4fd;
 }
 
-/* ===== PORTFOLIO ===== */
+.footer-div {
+    padding:100px 864px 100px 15px ;
+    /* outline: red 2px solid; */
+}
+
+.footer-link {
+    padding-bottom: 16px;
+}
+
+/* ============== PORTFOLIO ============ */
+
+.port-btn-list{
+    padding: 96px 427px 72px 427px;
+
+}
 
 .filter-btn {
     font-family: 'Roboto', sans-serif;
@@ -195,3 +307,6 @@ body {
     border-radius: 4px;
 }
 
+.port-photos-list {
+    padding-bottom: 120px;
+}
