@@ -95,7 +95,6 @@ img {
 
 .section {
     padding-top: 120px;
-    
 }
 
 
@@ -104,8 +103,6 @@ img {
 /* =================== HEADER ==================== */
 
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: #E7E9FC 1px solid;
 }
 
@@ -141,6 +138,8 @@ img {
 
 .menu {
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
     gap: 40px;
 }
 
@@ -194,6 +193,12 @@ img {
     padding: 188px 0;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main-title {
     font-family: var(--primary-font);
     font-style: normal;
@@ -203,7 +208,8 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    padding: 0 316px 48px 316px;
+    max-width: 496px;
+    margin-bottom: 48px;
     
 }
 
@@ -213,16 +219,18 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
+    display: block;
     align-items: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: 0;
+    min-width: 169px;
+    height: 56px;
     cursor: pointer;
     margin: 0 auto;
-    padding: 16px 32px;
 }
 
 .modal-btn:hover,
@@ -234,6 +242,11 @@ img {
 }
 
 /* =================== +++ of this comp ============= */
+
+.features-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .hidden-title {
 
@@ -254,12 +267,15 @@ img {
 
 /* =============== What are we doing ============ */
 
+.facil-section {
+    padding-bottom: 120px;
+}
+
 .facil-sec-title {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .facil-list {
-    padding-bottom: 120px;
     display: flex;
     gap: 24px;
 }
