@@ -138,13 +138,12 @@ img {
 
 .menu {
     display: flex;
-    
     gap: 40px;
 }
 
 .menu-item {
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-link {
@@ -155,8 +154,7 @@ img {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding-top: 24px;
-        padding-bottom: 24px;
+    
 }
 
 .menu-link:hover,
