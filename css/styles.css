@@ -114,6 +114,7 @@ img {
 .header-navigation {
     display: flex;
     align-items: center;
+    padding: 24px 0;
 }
 
 .logo {
@@ -142,7 +143,7 @@ img {
 }
 
 .menu-item {
-   padding: 24px 0;
+   
 }
 
 .menu-link {
@@ -164,6 +165,7 @@ img {
 .adress-header {
     font-style: normal;
     margin-left: auto;
+    padding: 24px 0;
 }
 
 .adress-list {
