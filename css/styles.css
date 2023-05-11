@@ -280,22 +280,26 @@ img {
     gap: 24px;
 }
 
-.facil-item {
+.facil-list-items {
     width: calc((100%-48px)/3);
+}
+
+.facil-item {
 }
 
 /* ==================== Team ================= */
 
 .team-sec {
     background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-sec-title {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-list {
-    padding-bottom: 120px;
     display: flex;
     gap: 24px;
 }
@@ -330,6 +334,12 @@ img {
 
 /* ================= FOOTER ================ */
 
+.footer {
+    background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .footer-logo {
     text-decoration: none;
         font-family: var(--secondary-font);
@@ -345,32 +355,27 @@ img {
         color: #4D5AE5;
 }
 
-.footer {
-    background-color: #2e2f42;
-}
+
 
 .logo-studio-footer {
     color: #f4f4fd;
 }
 
-.p-footer {
-    color: #f4f4fd;
-}
-
-.footer-div {
-    padding:100px 0;
-    max-width: 264px;
-    /* outline: red 2px solid; */
-}
 
 .footer-link {
+    display: inline-block;
     margin-bottom: 16px;
 }
 
+.p-footer {
+    color: #f4f4fd;
+    max-width: 264px;
+}
 /* ============== PORTFOLIO ============ */
 
 .filter-sec {
     padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .port-btn-list{
@@ -405,26 +410,24 @@ img {
     color: #FFFFFF;
     background: #404BBF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: 1px solid transparent;
     border-radius: 4px;
 }
 
 .port-photos {
-    /* display: flex;
-    height: 420px;
-    width: calc((100%-144px)/9); */
+    width: calc((100% - 48px) / 3);
 }
 
 .port-photos-list {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-    padding-bottom: 120px;
 }
 
 .port-photos-text{
     display: flex;
     flex-direction: column;
-    padding: 32px 0;
+    padding: 32px 16px;
     text-align: left;
     border-bottom: #E7E9FC 1px solid;
     border-left: #E7E9FC 1px solid;
